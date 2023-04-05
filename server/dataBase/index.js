@@ -1,7 +1,7 @@
-const getData = require('./query');
+const getDataQuery = require('./query');
 const connection = require('./connection');
 
 module.exports = {
-  getData,
+  getDataQuery,
   connection,
 };
