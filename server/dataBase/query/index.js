@@ -1,3 +1,3 @@
-const getData = require('./getDataQuery');
+const getDataQuery = require('./getDataQuery');
 
-module.exports = getData;
+module.exports = getDataQuery;
