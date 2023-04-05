@@ -8,3 +8,5 @@ const router = express.Router();
 
 router.use(clientError);
 router.use(serverError);
+
+module.exports = router;
