@@ -7,9 +7,9 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "jest",
-    "start": "node server/index",
-    "dev": "nodemon server/index"
+    "test": "NODE_ENV=test  jest",
+    "start": "NODE_ENV=production node server/index",
+    "dev": "NODE_ENV=development nodemon server/index"
   },
   "keywords": [],
   "author": "",
