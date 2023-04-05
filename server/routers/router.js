@@ -2,8 +2,6 @@
 /* eslint-disable import/no-unresolved */
 const express = require('express');
 
-// const getAllData = require('./middleware/getData');
-// const postProduct = require('./middleware/postprouduct');
 const {
   getAllData,
   postProduct,
@@ -14,7 +12,8 @@ const router = express.Router();
 // router.use(clientError);
 // router.use(serverError);
 
-router.get('/', getAllData);
+router.get('/all', getAllData);
 
 router.post('/add', postProduct);
 module.exports = router;
+ 
