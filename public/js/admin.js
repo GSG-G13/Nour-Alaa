@@ -5,8 +5,8 @@ const price = document.querySelector('.priceProduct');
 const photo = document.querySelector('.photoProduct');
 
 const renderProduct = () => {
-  fetch('/al').then((result) => result.json()).then((data) => {
-    data.data.forEach((ele) => {
+  fetch('/all').then((result) => result.json()).then((data) => {
+    data.forEach((ele) => {
       let divBox = document.createElement("div");
       divBox.className = "box";
     
@@ -42,6 +42,8 @@ const renderProduct = () => {
      });
   }).catch(console.log);
 }
+
+renderProduct();
 
 btn.addEventListener('click', () => {
   if(title.value ==='' || price.value === '' || photo.value === ''){
