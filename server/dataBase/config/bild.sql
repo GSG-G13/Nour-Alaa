@@ -16,7 +16,10 @@ price INTEGER,
 catogery_id INTEGER NOT NULL REFERENCES catogery(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-INSERT INTO catogery(catogery) VALUES ('pizza');
+INSERT INTO catogery(catogery) VALUES ('food');
+INSERT INTO catogery(catogery) VALUES ('drink');
+INSERT INTO catogery(catogery) VALUES ('apprtizer');
+INSERT INTO catogery(catogery) VALUES ('dessert');
 
 INSERT INTO products (title, description, img, price, catogery_id) VALUES ('pizza', 'pizza pizza pizza pizza pizza', 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b', 20,1);
 INSERT INTO products (title, description, img, price, catogery_id) VALUES ('pizza2', 'pizza2 pizza2 pizza2 pizza2 pizza2', 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b', 20,1);

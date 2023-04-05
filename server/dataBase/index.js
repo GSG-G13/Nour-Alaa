@@ -1,7 +1,12 @@
-const getDataQuery = require('./query');
+const { getDataQuery } = require('./query');
 const connection = require('./connection');
+const {
+  postproductQuery,
+} = require('./query');
 
 module.exports = {
-  getDataQuery,
   connection,
+  getDataQuery,
+  postproductQuery,
+
 };
