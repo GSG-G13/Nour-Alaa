@@ -3,7 +3,7 @@
 const express = require('express');
 
 const getAllData = require('./middleware/getData');
-// const { clientError, serverError } = require('../controlers/errors/error');
+const postProduct = require('./middleware/postprouduct');
 
 const router = express.Router();
 
@@ -12,4 +12,5 @@ const router = express.Router();
 
 router.get('/', getAllData);
 
+router.post('/add', postProduct);
 module.exports = router;
