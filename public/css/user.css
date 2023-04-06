@@ -277,6 +277,7 @@ div.count {
   justify-content: center;
   margin-bottom: 3rem;
 }
+
 .Filter-Container div {
   padding: 10px 13px;
   background-color: #eee;
@@ -284,6 +285,10 @@ div.count {
   margin-bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+.Filter-Container div:first-child {
+background-color: #f64141;
+color: #eee;
 }
 .Filter-Container div:hover {
   background-color: #cdcbcb;
