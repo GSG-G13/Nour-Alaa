@@ -5,6 +5,7 @@ const renderProduct = () => {
     data.forEach((ele) => {
       const divBox = document.createElement('div');
       divBox.className = 'box';
+      divBox.id = ele.id;
 
       const imgEle = document.createElement('img');
       imgEle.src = ele.img;
