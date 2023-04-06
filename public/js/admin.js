@@ -42,6 +42,13 @@ const renderProduct = () => {
       divBox.appendChild(deletBtn);
       divBox.appendChild(cate);
       main.appendChild(divBox);
+
+      deletBtn.addEventListener('click', (e) => {
+        fetch(`/delete/${e.target.parentElement.id}`, {
+          method: 'delete',
+        }).then(renderProduct())
+          .catch(console.log);
+      });
     });
   }).catch(console.log);
 };

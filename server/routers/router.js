@@ -12,6 +12,7 @@ const {
 const router = express.Router();
 router.get('/all', getAllData);
 router.post('/add', postProduct);
+
 router.delete('/delete/:id', deleter);
 
 router.use(clientError);
