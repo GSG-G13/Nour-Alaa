@@ -3,6 +3,7 @@
 const express = require('express');
 const { clientError, serverError } = require('../controlers/errors/error');
 
+const deleter = require('./middleware/deletmeddil');
 const {
   getAllData,
   postProduct,
@@ -11,11 +12,9 @@ const {
 const router = express.Router();
 router.get('/all', getAllData);
 router.post('/add', postProduct);
-router.delete('/delete/:id', (req, res) => {
-  console.log(req.params.id);
-});
+
+router.delete('/delete/:id', deleter);
 
 router.use(clientError);
 router.use(serverError);
-
 module.exports = router;
