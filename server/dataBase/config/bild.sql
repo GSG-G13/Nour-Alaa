@@ -21,7 +21,9 @@ INSERT INTO catogery(catogery) VALUES ('drink');
 INSERT INTO catogery(catogery) VALUES ('apprtizer');
 INSERT INTO catogery(catogery) VALUES ('dessert');
 
-INSERT INTO products (title, description, img, price, catogery_id) VALUES ('pizza', 'pizza pizza pizza pizza pizza', 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b', 20,1);
-INSERT INTO products (title, description, img, price, catogery_id) VALUES ('pizza2', 'pizza2 pizza2 pizza2 pizza2 pizza2', 'http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b', 20,1);
+INSERT INTO products (title, description, img, price, catogery_id) VALUES ('Healthy food', '', 'https://i.pinimg.com/564x/19/42/39/1942391edeffc0313b4f023f6430e5c6.jpg', 20,1);
+INSERT INTO products (title, description, img, price, catogery_id) VALUES ('Golden fish', 'fish', 'https://i.pinimg.com/564x/5f/16/9a/5f169ac3249f4b618fdc9382b1af7116.jpg', 50,1);
+INSERT INTO products (title, description, img, price, catogery_id) VALUES ('Rollechen', 'fish', 'https://i.pinimg.com/236x/69/9a/19/699a1924fc604a7af573a8238182ce00.jpg', 50,2);
+INSERT INTO products (title, description, img, price, catogery_id) VALUES ('Brownie Fudge Swirl', 'fish', 'https://i.pinimg.com/564x/cf/7a/9a/cf7a9a7431d8630aecd1f7ab5d984f63.jpg', 50,4);
 
 COMMIT;
