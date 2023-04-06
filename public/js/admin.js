@@ -59,7 +59,6 @@ btn.addEventListener('click', () => {
   if (title.value.trim() === '' || price.value.trim() === '' || photo.value.trim() === '') {
     return;
   }
-
   const newData = {
     title: title.value,
     img: photo.value,

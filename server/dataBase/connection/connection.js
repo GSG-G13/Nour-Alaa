@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'test') {
 
 const options = {
   connectionString: dbUrl,
-  ssl: false,
+  ssl: true,
 };
 
 const connection = new Pool(options);
